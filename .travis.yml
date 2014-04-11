@@ -1,0 +1,13 @@
+language: cpp
+
+compiler:
+  - gcc
+
+script:
+  - make test
+
+notifications:
+  recipients:
+    - marcus@doo.net
+  email:
+    on_success: change
