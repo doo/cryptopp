@@ -84,6 +84,10 @@ and getting me started with this manual.
 
 NAMESPACE_BEGIN(CryptoPP)
 
+#if ((__GNUC__ == 4) && (__GNUC_MINOR__ > 5)) || (__GNUC__ > 4)
+typedef unsigned char byte;
+#endif
+
 // forward declarations
 class Integer;
 class RandomNumberGenerator;
